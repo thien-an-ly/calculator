@@ -1,0 +1,39 @@
+# Git files
+
+.git
+.gitignore
+
+# Documentation
+
+README.md
+\*.md
+
+# IDE files
+
+.vscode/
+.idea/
+_.swp
+_.swo
+
+# Python cache
+
+**pycache**/
+_.py[cod]
+_$py.class
+\*.so
+
+# Virtual environment
+
+venv/
+env/
+ENV/
+
+# OS generated files
+
+.DS*Store
+.DS_Store?
+.*\*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

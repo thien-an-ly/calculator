@@ -1,0 +1,38 @@
+{% extends "base.html" %} {% block title %}Home - Hello World App{% endblock %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-lg-8">
+    <div class="card">
+      <div class="card-body text-center p-5">
+        <h1 class="display-4 mb-4">🌍 Hello, World!</h1>
+        <p class="lead mb-4">Welcome to our Flask web application!</p>
+        <p class="text-muted mb-4">
+          This simple web app includes a basic calculator for performing
+          arithmetic operations.
+        </p>
+
+        <div class="row g-3 justify-content-center">
+          <div class="col-md-6">
+            <div class="card bg-light h-100">
+              <div class="card-body">
+                <div class="display-1 mb-3">🧮</div>
+                <h5>Calculator</h5>
+                <p class="text-muted">Perform basic arithmetic calculations</p>
+                <a href="{{ url_for('calculator') }}" class="btn btn-primary">
+                  Try Calculator →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+          <small class="text-muted"
+            >Built with Flask • Containerized with Docker</small
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
